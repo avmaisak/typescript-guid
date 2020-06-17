@@ -37,7 +37,7 @@ export class Guid {
 
     // Comparing string `value` against provided `guid` will auto-call
     // toString on `guid` for comparison
-    equals = (other: Guid): boolean => Guid.isGuid(other) && this.value === other.toString();
+    equals = (other: Guid): boolean => Guid.isGuid(other) && this.value.toUpperCase() === other.toString().toUpperCase();
 
     isEmpty = (): boolean => this.value === globals.guidDefaultValue;
 
