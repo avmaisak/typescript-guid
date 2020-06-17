@@ -1,6 +1,6 @@
 {
   "name": "typescript-guid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Guid generator to typescript",
   "scripts": {
     "verify": ".\\node_modules\\.bin\\tslint .\\lib\\**",
@@ -8,7 +8,7 @@
     "build": ".\\node_modules\\.bin\\tsc -t es3 -m commonjs -d --outDir dist"
   },
   "author": "nicolas",
-  "license": "ISC",
+  "license": "MIT",
   "keywords": [
     "typescript",
     "guid",
@@ -18,7 +18,7 @@
   "types": "./dist/guid.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/avmaisak/guid-typescript"
+    "url": "https://github.com/avmaisak/typescript-guid"
   },
   "devDependencies": {
     "@types/chai": "^4.2.11",
