@@ -1,6 +1,9 @@
 # Guid Typescript
 
-Guid Typescript is a library that lets you generate guid code
+#### Guid Typescript is a library that lets you generate guid code
+
+#### Based on https://github.com/NicolasDeveloper/guid-typescript 
+#### original author https://github.com/NicolasDeveloper
 
 ## Installation and usage
 ### Installation
@@ -35,4 +38,3 @@ export class Example {
 | isEmpty ( ): boolean | Validate if a guid is empty  | OK | Ready |
 | toString ( ): string | Parse a guid instance to string format  | OK | Ready |
 | toJSON ( ): any | Parse to JSON format  | OK | Ready |
-

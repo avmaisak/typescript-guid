@@ -1,14 +1,14 @@
 {
   "name": "typescript-guid",
-  "version": "1.0.1",
-  "description": "Guid generator to typescript",
+  "version": "1.0.2",
+  "description": "Guid generator to typescript, based on https://github.com/NicolasDeveloper/guid-typescript",
   "scripts": {
     "verify": ".\\node_modules\\.bin\\tslint .\\lib\\**",
     "test": "npm run verify && mocha -r ts-node/register tests/*.spec.ts",
     "build": ".\\node_modules\\.bin\\tsc -t es3 -m commonjs -d --outDir dist"
   },
-  "author": "nicolas",
-  "license": "MIT",
+  "author": "avmaisak",
+  "license": "ISC",
   "keywords": [
     "typescript",
     "guid",
