@@ -1,10 +1,11 @@
 {
   "name": "typescript-guid",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Guid generator to typescript, based on https://github.com/NicolasDeveloper/guid-typescript",
   "scripts": {
-    "verify": ".\\node_modules\\.bin\\tslint .\\lib\\**",
-    "test": "cross-env TS_NODE_FILES=true npm run verify && mocha -r ts-node/register -colors tests/*.spec.ts",
+    "lint": ".\\node_modules\\.bin\\eslint .\\lib\\**",
+    "lint-fix": ".\\node_modules\\.bin\\eslint .\\lib\\** --fix",
+    "test": "cross-env TS_NODE_FILES=true npm run lint && mocha -r ts-node/register -colors tests/*.spec.ts",
     "coverage": "nyc npm run test",
     "build": ".\\node_modules\\.bin\\tsc -t es3 -m commonjs -d --outDir dist"
   },
@@ -24,13 +25,15 @@
   "devDependencies": {
     "@types/chai": "^4.2.11",
     "@types/mocha": "^7.0.2",
-    "@types/node": "^14.0.13",
+    "@types/node": "^14.0.14",
+    "@typescript-eslint/eslint-plugin": "^3.4.0",
+    "@typescript-eslint/parser": "^3.4.0",
     "chai": "^4.2.0",
     "cross-env": "^7.0.2",
+    "eslint": "^7.3.1",
     "mocha": "^8.0.1",
     "nyc": "^15.1.0",
     "ts-node": "^8.10.2",
-    "tslint": "^6.1.2",
     "typescript": "^3.9.5"
   },
   "dependencies": {},
